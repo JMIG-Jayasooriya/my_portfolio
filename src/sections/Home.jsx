@@ -24,11 +24,11 @@ const Home = ({ onOpenCvModal }) => {
           <div className="hero-content">
             <div className="hero-badge">
               <span className="hero-badge-dot"></span>
-              <span>HELLO, I'M ISUMI</span>
+              <span>WELCOME TO MY PORTFOLIO</span>
             </div>
 
             <h1 className="hero-title">
-              Building my journey in <span className="gradient-text">technology.</span>
+              Isumi Gayasha <span className="gradient-text">Jayasooriya</span>
             </h1>
 
             <p className="hero-subtitle">
