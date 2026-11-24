@@ -1220,6 +1220,10 @@
   transform: translateY(-4px);
 }
 
+.cert-card:hover .cert-preview-img {
+  transform: scale(1.04);
+}
+
 .cert-header {
   display: flex;
   align-items: flex-start;

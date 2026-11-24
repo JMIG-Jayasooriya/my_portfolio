@@ -10,7 +10,7 @@ export const personalInfo = {
   email: "isumigayasha20@gmail.com",
   phone: "+94 76 6375625",
   github: "https://github.com/JMIG-Jayasooriya",
-  linkedin: "https://linkedin.com",
+  linkedin: "https://www.linkedin.com/in/isumi-gayasha-a89685345/",
   profileImage: "/images/profile.jpg",
   cvFileName: "Isumi_Gayasha_Jayasooriya_CV.pdf",
   university: "Sabaragamuwa University of Sri Lanka",
@@ -185,27 +185,30 @@ export const certifications = [
     title: "Software Testing Fundamentals and Methodologies",
     issuer: "Microsoft (via Coursera)",
     date: "Certified",
+    image: "/images/cert-testing.jpg",
     skills: ["Software Testing", "Testing Methodologies", "Test Cases", "Quality Assurance"],
-    credentialUrl: "https://www.coursera.org",
-    idCode: "MS-TESTING-COURSERA"
+    credentialUrl: "https://www.coursera.org/account/accomplishments/records/ZQUFS6V263J0",
+    idCode: "ZQUFS6V263J0"
   },
   {
     id: "cert-react",
     title: "React Basics",
     issuer: "Meta (via Coursera)",
     date: "Certified",
+    image: "/images/cert-react.jpg",
     skills: ["React.js", "Component Architecture", "Hooks", "State & Props"],
-    credentialUrl: "https://www.coursera.org",
-    idCode: "META-REACT-COURSERA"
+    credentialUrl: "https://www.coursera.org/account/accomplishments/records/W0IPH0N0OA4I",
+    idCode: "W0IPH0N0OA4I"
   },
   {
     id: "cert-js",
     title: "JavaScript Programming Essentials",
     issuer: "IBM (via Coursera)",
     date: "Certified",
+    image: "/images/cert-js.jpg",
     skills: ["JavaScript", "ES6+", "Asynchronous Programming", "DOM Manipulation"],
-    credentialUrl: "https://www.coursera.org",
-    idCode: "IBM-JS-COURSERA"
+    credentialUrl: "https://www.coursera.org/account/accomplishments/records/S4XU8RXXM128",
+    idCode: "S4XU8RXXM128"
   }
 ];
 

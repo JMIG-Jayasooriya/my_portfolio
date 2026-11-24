@@ -189,44 +189,65 @@ const Qualifications = () => {
           <div>
             <div className="cert-grid">
               {certifications.map((cert) => (
-                <div key={cert.id} className="cert-card">
-                  <div className="cert-header">
-                    <div className="cert-icon-box">
-                      <Award size={24} />
-                    </div>
-                    <div>
-                      <h3 className="cert-title">{cert.title}</h3>
-                      <p className="cert-issuer">{cert.issuer}</p>
-                    </div>
-                  </div>
-
-                  <div className="cert-meta">
-                    <span style={{ display: 'flex', alignItems: 'center', gap: '5px' }}>
-                      <Calendar size={14} />
-                      <span>{cert.date}</span>
-                    </span>
-                    <span className="badge" style={{ fontSize: '0.72rem' }}>
-                      Verified
-                    </span>
-                  </div>
-
-                  <div className="cert-skills">
-                    {cert.skills.map((skill) => (
-                      <span key={skill} className="tag-chip">
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-
-                  <div className="cert-footer">
-                    <button
+                <div key={cert.id} className="cert-card" style={{ padding: 0, overflow: 'hidden' }}>
+                  {cert.image && (
+                    <div
                       onClick={() => setSelectedCert(cert)}
-                      className="btn btn-secondary btn-sm"
-                      style={{ width: '100%' }}
+                      title="Click to view full certificate"
+                      style={{ width: '100%', height: '185px', overflow: 'hidden', position: 'relative', borderBottom: '1px solid var(--border-color)', backgroundColor: 'var(--bg-card-subtle)', cursor: 'pointer' }}
                     >
-                      <ExternalLink size={14} />
-                      <span>View Certificate Details</span>
-                    </button>
+                      <img
+                        src={cert.image}
+                        alt={cert.title}
+                        className="cert-preview-img"
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', objectPosition: 'center top', display: 'block', transition: 'transform 0.4s ease' }}
+                      />
+                      <span className="badge" style={{ position: 'absolute', top: '12px', right: '12px', fontSize: '0.72rem', backgroundColor: 'rgba(11, 15, 25, 0.88)', backdropFilter: 'blur(8px)', borderColor: 'rgba(99, 102, 241, 0.4)' }}>
+                        Verified
+                      </span>
+                    </div>
+                  )}
+
+                  <div style={{ padding: '22px', display: 'flex', flexDirection: 'column', flexGrow: 1 }}>
+                    <div className="cert-header" style={{ marginBottom: '12px' }}>
+                      <div className="cert-icon-box" style={{ width: '40px', height: '40px', borderRadius: '10px' }}>
+                        <Award size={20} />
+                      </div>
+                      <div>
+                        <h3 className="cert-title" style={{ fontSize: '1.05rem' }}>{cert.title}</h3>
+                        <p className="cert-issuer">{cert.issuer}</p>
+                      </div>
+                    </div>
+
+                    <div className="cert-skills" style={{ marginBottom: '18px' }}>
+                      {cert.skills.map((skill) => (
+                        <span key={skill} className="tag-chip">
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+
+                    <div className="cert-footer" style={{ display: 'flex', gap: '8px', marginTop: 'auto', paddingTop: '14px', borderTop: '1px solid var(--border-light)' }}>
+                      <button
+                        onClick={() => setSelectedCert(cert)}
+                        className="btn btn-secondary btn-sm"
+                        style={{ flex: 1 }}
+                      >
+                        <Award size={14} />
+                        <span>View Certificate</span>
+                      </button>
+                      <a
+                        href={cert.credentialUrl}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-primary btn-sm"
+                        style={{ flex: 1 }}
+                        title="View official certificate on Coursera"
+                      >
+                        <ExternalLink size={14} />
+                        <span>Coursera</span>
+                      </a>
+                    </div>
                   </div>
                 </div>
               ))}
