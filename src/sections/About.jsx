@@ -1,84 +1,98 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
 import { personalInfo } from '../data/portfolioData';
-import { GraduationCap, Code2, Database, Sparkles, MapPin, Building2, Calendar } from 'lucide-react';
+import {
+  GraduationCap,
+  Building2,
+  School,
+  Briefcase,
+  MapPin,
+  Sparkles
+} from 'lucide-react';
 
 const About = () => {
   return (
     <section id="about" className="section section-alt">
       <div className="container">
         <SectionTitle
-          subtitle="GET TO KNOW ME"
+          subtitle="BACKGROUND & PROFILE"
           title="About Me"
-          description="A brief look into my academic background, technical focus, and interests."
+          description="A comprehensive look into my academic foundations, technical journey, and hands-on professional experiences."
         />
 
-        <div className="about-grid">
-          {/* Left: Concise Bio */}
-          <div className="about-text">
-            <p style={{ fontSize: '1.08rem', lineHeight: '1.7', color: 'var(--text-heading)', marginBottom: '16px' }}>
-              I am an <strong>Information Systems undergraduate</strong> reading for my <strong>{personalInfo.degree}</strong> at <strong>{personalInfo.university}</strong>.
-            </p>
-            <p style={{ fontSize: '0.96rem', lineHeight: '1.7', color: 'var(--text-body)', marginBottom: '24px' }}>
-              Passionate about software engineering, database design, and creating practical web solutions. I enjoy learning modern technologies, writing clean code, and solving real-world problems through hands-on projects.
-            </p>
-
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '14px', paddingTop: '8px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-heading)', fontWeight: 600, fontSize: '0.88rem', padding: '6px 14px', backgroundColor: 'var(--bg-card-subtle)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-                <MapPin size={16} color="var(--primary-light)" />
-                <span>{personalInfo.location}</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-heading)', fontWeight: 600, fontSize: '0.88rem', padding: '6px 14px', backgroundColor: 'var(--bg-card-subtle)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-                <Building2 size={16} color="var(--primary-light)" />
-                <span>Sabaragamuwa University</span>
-              </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-heading)', fontWeight: 600, fontSize: '0.88rem', padding: '6px 14px', backgroundColor: 'var(--bg-card-subtle)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
-                <Calendar size={16} color="var(--primary-light)" />
-                <span>Class of {personalInfo.expectedGraduation}</span>
-              </div>
-            </div>
+        {/* Centered Profile Card */}
+        <div className="about-card-container">
+          <div style={{ display: 'inline-flex', alignItems: 'center', gap: '8px', padding: '6px 16px', borderRadius: '9999px', backgroundColor: 'var(--primary-soft)', border: '1px solid var(--primary-border)', color: 'var(--primary-light)', fontSize: '0.82rem', fontWeight: 600, letterSpacing: '0.04em', textTransform: 'uppercase', marginBottom: '18px' }}>
+            <Sparkles size={14} />
+            <span>Personal Profile & Journey</span>
           </div>
 
-          {/* Right: 4 Concise Essential Pillars */}
-          <div className="about-features">
-            <div className="about-feature-card">
-              <div className="about-feature-icon">
-                <GraduationCap size={20} />
+          <h3 style={{ fontSize: '1.45rem', fontWeight: 700, color: 'var(--text-heading)', marginBottom: '18px', lineHeight: 1.35 }}>
+            Information Systems Undergraduate & Software Enthusiast based in Colombo, Sri Lanka.
+          </h3>
+
+          <div className="about-text">
+            <p>
+              I am currently reading for a <strong>Bachelor of Honours in Information Systems</strong> at the <strong>Faculty of Computing, Sabaragamuwa University of Sri Lanka</strong> (Expected Graduation – {personalInfo.expectedGraduation}). My academic background began in the Physical Science Stream at <strong>Dharmasoka College Ambalangoda</strong>, which cultivated a strong foundation in mathematics, analytical thinking, and logical problem solving.
+            </p>
+
+            <p>
+              My passion lies in designing and developing reliable digital systems that bridge human needs with efficient technology. Through academic coursework and personal projects, I develop modern full-stack web applications using <strong>React.js, Spring Boot, Java, and MySQL</strong>, with hands-on practice in relational database design, REST APIs, and software testing.
+            </p>
+
+            <p>
+              Beyond the classroom, my practical exposure at <strong>People's Bank, Kekirawa</strong> instilled high precision, accountability with transactions, and effective communication skills. I am actively involved in university life as a member of the <strong>Rotaract Club of SUSL</strong>, university sports teams, and the outdoor hiking club. My ambition is to contribute to dynamic software engineering teams and continuously learn modern technologies.
+            </p>
+          </div>
+
+          {/* Structured Quick Facts Grid: 3 Columns x 2 Rows */}
+          <div className="about-quick-facts">
+            <div className="about-fact-item">
+              <GraduationCap size={18} color="var(--primary-light)" style={{ flexShrink: 0, marginTop: '2px' }} />
+              <div>
+                <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Degree Programme</div>
+                <div style={{ fontWeight: 600, color: 'var(--text-heading)' }}>BSc (Hons) Info Systems (2024–2028)</div>
               </div>
-              <h4 className="about-feature-title">Information Systems</h4>
-              <p className="about-feature-desc">
-                Foundations in systems analysis, software engineering, and enterprise architecture.
-              </p>
             </div>
 
-            <div className="about-feature-card">
-              <div className="about-feature-icon">
-                <Code2 size={20} />
+            <div className="about-fact-item">
+              <Building2 size={18} color="var(--primary-light)" style={{ flexShrink: 0, marginTop: '2px' }} />
+              <div>
+                <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>University</div>
+                <div style={{ fontWeight: 600, color: 'var(--text-heading)' }}>Sabaragamuwa University of Sri Lanka</div>
               </div>
-              <h4 className="about-feature-title">Web Development</h4>
-              <p className="about-feature-desc">
-                Hands-on experience building full-stack applications with React, Java, and modern tools.
-              </p>
             </div>
 
-            <div className="about-feature-card">
-              <div className="about-feature-icon">
-                <Database size={20} />
+            <div className="about-fact-item">
+              <School size={18} color="var(--primary-light)" style={{ flexShrink: 0, marginTop: '2px' }} />
+              <div>
+                <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Secondary Education</div>
+                <div style={{ fontWeight: 600, color: 'var(--text-heading)' }}>Dharmasoka College Ambalangoda</div>
               </div>
-              <h4 className="about-feature-title">Database Design</h4>
-              <p className="about-feature-desc">
-                Designing structured relational schemas and working with MySQL and PostgreSQL.
-              </p>
             </div>
 
-            <div className="about-feature-card">
-              <div className="about-feature-icon">
-                <Sparkles size={20} />
+            <div className="about-fact-item">
+              <Briefcase size={18} color="var(--primary-light)" style={{ flexShrink: 0, marginTop: '2px' }} />
+              <div>
+                <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Practical Experience</div>
+                <div style={{ fontWeight: 600, color: 'var(--text-heading)' }}>Operations Trainee (People's Bank)</div>
               </div>
-              <h4 className="about-feature-title">Problem Solving</h4>
-              <p className="about-feature-desc">
-                Strong attention to detail, adaptability, and active teamwork on collaborative projects.
-              </p>
+            </div>
+
+            <div className="about-fact-item">
+              <MapPin size={18} color="var(--primary-light)" style={{ flexShrink: 0, marginTop: '2px' }} />
+              <div>
+                <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Location</div>
+                <div style={{ fontWeight: 600, color: 'var(--text-heading)' }}>{personalInfo.location}</div>
+              </div>
+            </div>
+
+            <div className="about-fact-item">
+              <Sparkles size={18} color="var(--primary-light)" style={{ flexShrink: 0, marginTop: '2px' }} />
+              <div>
+                <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)', textTransform: 'uppercase', letterSpacing: '0.04em' }}>Core Focus</div>
+                <div style={{ fontWeight: 600, color: 'var(--text-heading)' }}>Full Stack Web & Software QA</div>
+              </div>
             </div>
           </div>
         </div>
