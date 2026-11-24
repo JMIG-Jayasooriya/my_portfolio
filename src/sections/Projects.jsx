@@ -29,7 +29,7 @@ const Projects = () => {
             <button
               key={tab}
               onClick={() => setSelectedCategory(tab)}
-              className={`skill-tab-btn ${selectedCategory === tab ? 'active' : ''}`}
+              className={`projects-filter-btn ${selectedCategory === tab ? 'active' : ''}`}
             >
               {tab === 'All' ? 'All Projects' : tab}
             </button>

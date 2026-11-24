@@ -61,6 +61,11 @@ const Contact = () => {
         <div className="contact-grid">
           {/* Contact Details Card */}
           <div className="contact-info-card">
+            <div className="contact-status-banner">
+              <span className="pulse-green-dot"></span>
+              <span>Available for Software & QA Internships</span>
+            </div>
+
             <h3 className="contact-info-title">Let's Connect & Collaborate</h3>
             <p className="contact-info-text">
               I am actively seeking internship opportunities where I can apply my analytical thinking, technical skills, and problem-solving abilities to contribute to impactful digital solutions.

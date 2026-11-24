@@ -24,7 +24,7 @@ const Footer = () => {
       <div className="container">
         <div className="footer-top">
           <div>
-            <a href="#home" className="footer-brand">
+            <a href="#home" className="footer-brand no-underline" style={{ textDecoration: 'none' }}>
               {personalInfo.shortName}<span>.</span>
             </a>
             <p style={{ color: '#94A3B8', fontSize: '0.9rem', marginTop: '6px' }}>
@@ -34,7 +34,7 @@ const Footer = () => {
 
           <div className="footer-nav">
             {navLinks.map((link) => (
-              <a key={link.label} href={link.href} className="footer-nav-link">
+              <a key={link.label} href={link.href} className="footer-nav-link no-underline" style={{ textDecoration: 'none' }}>
                 {link.label}
               </a>
             ))}

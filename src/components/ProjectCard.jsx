@@ -4,7 +4,12 @@ import { ExternalLink, Github, Layers, Eye } from 'lucide-react';
 const ProjectCard = ({ project, onSelectProject }) => {
   return (
     <div className="project-card">
-      <div className="project-banner">
+      <div
+        className="project-banner"
+        onClick={() => onSelectProject(project)}
+        title="Click to view project details"
+        style={{ cursor: 'pointer' }}
+      >
         {project.image ? (
           <img src={project.image} alt={project.title} className="project-banner-img" />
         ) : (
