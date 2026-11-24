@@ -9,8 +9,9 @@ export const personalInfo = {
   location: "Colombo, Sri Lanka",
   email: "isumigayasha20@gmail.com",
   phone: "+94 76 6375625",
-  github: "https://github.com",
+  github: "https://github.com/JMIG-Jayasooriya",
   linkedin: "https://linkedin.com",
+  profileImage: "/images/profile.jpg",
   cvFileName: "Isumi_Gayasha_Jayasooriya_CV.pdf",
   university: "Sabaragamuwa University of Sri Lanka",
   faculty: "Faculty of Computing",
@@ -75,7 +76,7 @@ export const projects = [
       "Integrated secure authentication with JWT and Role-Based Access Control (RBAC)",
       "Collaborated efficiently with team members using Git and GitHub in an agile multi-member development lifecycle"
     ],
-    github: "https://github.com",
+    github: "https://github.com/JMIG-Jayasooriya/V---Mas",
     demo: "#",
     featured: true,
     badge: "Group Capstone Project"
@@ -95,7 +96,7 @@ export const projects = [
       "Full CRUD functionality for managing journal logs, travel milestones, and expense tracking",
       "Connected to MySQL relational database for reliable and structured data storage"
     ],
-    github: "https://github.com",
+    github: "https://github.com/JMIG-Jayasooriya/travel-memories",
     demo: "#",
     featured: true,
     badge: "Individual Project"
@@ -105,6 +106,7 @@ export const projects = [
     title: "ISHU CAKE – Responsive Cake Shop Website",
     category: "Frontend",
     projectType: "Individual Project",
+    image: "/images/ishu-cake.jpg",
     shortDescription: "A modern, responsive e-commerce web application for an artisanal cake boutique featuring interactive menus, product catalogs, and mobile-friendly UI.",
     fullDescription: "ISHU CAKE is a clean, visually appetizing web storefront for a specialty cake business. It provides customers with an intuitive product showcase, category filtering, interactive flavor ordering menus, and an optimal browsing experience across desktop, tablet, and mobile devices.",
     technologies: ["HTML5", "CSS3", "JavaScript"],
@@ -114,7 +116,7 @@ export const projects = [
       "Developed structured modular JavaScript for smooth interactions and client-side form validations",
       "Focused on high accessibility, rapid load performance, and intuitive visual hierarchy"
     ],
-    github: "https://github.com",
+    github: "https://github.com/JMIG-Jayasooriya/my-project",
     demo: "#",
     featured: true,
     badge: "Individual Project"
@@ -133,7 +135,7 @@ export const projects = [
       "Documented defect reports with clear reproduction steps, expected vs. actual outcomes, and severity prioritization",
       "Grounded in Software Testing Lifecycle (STLC) and standard QA best practices"
     ],
-    github: "https://github.com",
+    github: "https://github.com/JMIG-Jayasooriya",
     demo: "#",
     featured: true,
     badge: "QA & Testing"

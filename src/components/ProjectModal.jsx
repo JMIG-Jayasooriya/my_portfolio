@@ -20,6 +20,12 @@ const ProjectModal = ({ project, onClose }) => {
           </h2>
         </div>
 
+        {project.image && (
+          <div className="project-modal-image-wrap">
+            <img src={project.image} alt={project.title} className="project-modal-img" />
+          </div>
+        )}
+
         <p style={{ fontSize: '1rem', color: 'var(--text-body)', lineHeight: '1.7', marginBottom: '24px' }}>
           {project.fullDescription || project.shortDescription}
         </p>

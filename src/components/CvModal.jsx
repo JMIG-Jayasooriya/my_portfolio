@@ -18,10 +18,17 @@ const CvModal = ({ isOpen, onClose }) => {
 
         {/* Modal Header */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid var(--border-color)', paddingBottom: '16px', marginBottom: '20px' }}>
-          <div>
-            <span className="badge" style={{ marginBottom: '6px' }}>Curriculum Vitae</span>
-            <h2 style={{ fontSize: '1.6rem', color: 'var(--text-heading)' }}>{personalInfo.name}</h2>
-            <p style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.95rem' }}>{personalInfo.title}</p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+            <img
+              src={personalInfo.profileImage || "/images/profile.jpg"}
+              alt={personalInfo.name}
+              style={{ width: '58px', height: '58px', borderRadius: '50%', objectFit: 'cover', objectPosition: 'center top', border: '2px solid var(--primary-border)', flexShrink: 0 }}
+            />
+            <div>
+              <span className="badge" style={{ marginBottom: '4px' }}>Curriculum Vitae</span>
+              <h2 style={{ fontSize: '1.5rem', color: 'var(--text-heading)' }}>{personalInfo.name}</h2>
+              <p style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem' }}>{personalInfo.title}</p>
+            </div>
           </div>
           <button className="btn btn-primary btn-sm" onClick={handleDownload}>
             <Download size={15} />

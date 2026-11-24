@@ -500,16 +500,25 @@ p {
 }
 
 .hero-avatar-circle {
-  width: 130px;
-  height: 130px;
+  width: 140px;
+  height: 140px;
   border-radius: 50%;
-  background: linear-gradient(135deg, #E8EEFF, #FFFFFF);
+  overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 18px;
-  border: 4px solid rgba(255, 255, 255, 0.4);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  border: 4px solid rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
+  background-color: #FFFFFF;
+}
+
+.hero-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+  display: block;
 }
 
 .hero-avatar-initials {
@@ -815,9 +824,40 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 20px;
+  padding: 0;
   color: #FFFFFF;
   overflow: hidden;
+}
+
+.project-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+  transition: transform var(--transition-normal);
+}
+
+.project-card:hover .project-banner-img {
+  transform: scale(1.05);
+}
+
+.project-modal-image-wrap {
+  width: 100%;
+  height: 240px;
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 20px;
+  border: 1px solid var(--border-color);
+  background-color: #F8FAFC;
+}
+
+.project-modal-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
 }
 
 .project-banner-pattern {

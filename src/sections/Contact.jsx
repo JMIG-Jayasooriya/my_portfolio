@@ -102,8 +102,8 @@ const Contact = () => {
                   <Github size={20} />
                 </div>
                 <div>
-                  <div className="contact-channel-label">GitHub Repository</div>
-                  <div className="contact-channel-value">github.com</div>
+                  <div className="contact-channel-label">GitHub Profile</div>
+                  <div className="contact-channel-value">github.com/JMIG-Jayasooriya</div>
                 </div>
               </a>
 

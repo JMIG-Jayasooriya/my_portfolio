@@ -98,7 +98,11 @@ const Home = ({ onOpenCvModal }) => {
             <div className="hero-card-frame">
               <div className="hero-image-box">
                 <div className="hero-avatar-circle">
-                  <span className="hero-avatar-initials">IG</span>
+                  <img
+                    src={personalInfo.profileImage || "/images/profile.jpg"}
+                    alt={personalInfo.name}
+                    className="hero-avatar-img"
+                  />
                 </div>
                 <h3 className="hero-visual-name">{personalInfo.name}</h3>
                 <p className="hero-visual-role">{personalInfo.tagline}</p>

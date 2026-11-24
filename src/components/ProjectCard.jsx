@@ -5,16 +5,22 @@ const ProjectCard = ({ project, onSelectProject }) => {
   return (
     <div className="project-card">
       <div className="project-banner">
-        <div className="project-banner-pattern" />
+        {project.image ? (
+          <img src={project.image} alt={project.title} className="project-banner-img" />
+        ) : (
+          <>
+            <div className="project-banner-pattern" />
+            <div className="project-banner-content">
+              <div className="project-banner-icon">
+                <Layers size={28} />
+              </div>
+              <span style={{ fontSize: '0.85rem', fontWeight: 600, letterSpacing: '0.04em', opacity: 0.9 }}>
+                {project.category}
+              </span>
+            </div>
+          </>
+        )}
         <span className="project-badge-tag">{project.badge || project.category}</span>
-        <div className="project-banner-content">
-          <div className="project-banner-icon">
-            <Layers size={28} />
-          </div>
-          <span style={{ fontSize: '0.85rem', fontWeight: 600, letterSpacing: '0.04em', opacity: 0.9 }}>
-            {project.category}
-          </span>
-        </div>
       </div>
 
       <div className="project-body">
