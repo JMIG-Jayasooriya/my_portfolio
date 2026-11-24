@@ -55,7 +55,7 @@ const Contact = () => {
         <SectionTitle
           subtitle="GET IN TOUCH"
           title="Contact Me"
-          description="Interested in discussing a Quality Assurance internship opportunity or collaborating on projects? Reach out directly!"
+          description="Interested in discussing internship opportunities in software engineering or quality assurance, or collaborating on projects? Reach out directly!"
         />
 
         <div className="contact-grid">
@@ -63,7 +63,7 @@ const Contact = () => {
           <div className="contact-info-card">
             <h3 className="contact-info-title">Let's Connect & Collaborate</h3>
             <p className="contact-info-text">
-              I am actively seeking Quality Assurance Intern opportunities where I can apply my analytical thinking, testing fundamentals, and development knowledge to ensure top-tier software quality.
+              I am actively seeking internship opportunities across Software Engineering, Quality Assurance, and Information Systems where I can apply my development knowledge, testing fundamentals, and analytical problem-solving to build and verify dependable digital products.
             </p>
 
             <div className="contact-channels">
@@ -120,7 +120,7 @@ const Contact = () => {
 
             <div style={{ padding: '16px', backgroundColor: '#F8FAFC', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
               <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                <strong>Immediate Status:</strong> Open for Quality Assurance Internships, Software Testing positions & Graduate Roles.
+                <strong>Immediate Status:</strong> Open for Internships in Software Engineering, Quality Assurance & Technology Solutions.
               </p>
             </div>
           </div>
@@ -193,7 +193,7 @@ const Contact = () => {
                     id="subject"
                     name="subject"
                     className="form-input"
-                    placeholder="e.g. QA Internship Opportunity / Interview Invitation"
+                    placeholder="e.g. Internship Opportunity / Interview Invitation / Project Collaboration"
                     value={formData.subject}
                     onChange={handleChange}
                   />

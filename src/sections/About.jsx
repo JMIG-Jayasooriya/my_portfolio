@@ -10,7 +10,7 @@ const About = () => {
         <SectionTitle
           subtitle="PROFESSIONAL SUMMARY & BACKGROUND"
           title="About Me"
-          description="Information Systems undergraduate, passionate Quality Assurance intern, and technology enthusiast."
+          description="Information Systems undergraduate passionate about software engineering, quality assurance, and building impactful digital solutions."
         />
 
         <div className="about-grid">
@@ -19,10 +19,10 @@ const About = () => {
               I am an Information Systems undergraduate reading for my <strong>{personalInfo.degree}</strong> at <strong>{personalInfo.university}</strong> (Expected Graduation – {personalInfo.expectedGraduation}). I completed my secondary education in the Physical Science Stream at <strong>{personalInfo.school}</strong>.
             </p>
             <p>
-              I am passionate about <strong>Quality Assurance</strong>, <strong>Software Testing</strong>, and continuously improving software quality. Having hands-on software development experience across multi-member academic projects, I understand both the architectural development process and the testing lifecycle required to prevent defects and ensure seamless user experiences.
+              My journey in technology combines a passion for <strong>software development</strong> with a dedicated focus on <strong>Quality Assurance and software testing</strong>. Having hands-on engineering experience across full-stack academic and personal projects, I understand both how to build complex systems from scratch and how to test, inspect, and validate software to ensure high reliability, performance, and seamless user experiences.
             </p>
             <p>
-              I possess strong analytical thinking, problem-solving skills, and meticulous attention to detail, complemented by banking operations exposure at <strong>People's Bank, Kekirawa</strong>. My goal is to work alongside forward-thinking engineering teams to deliver reliable, robust, and user-friendly software solutions.
+              I possess strong analytical thinking, problem-solving skills, and meticulous attention to detail, complemented by banking operations exposure at <strong>People's Bank, Kekirawa</strong>. My goal is to collaborate with engineering and quality teams to contribute to reliable, scalable, and user-centric digital products.
             </p>
 
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '24px' }}>

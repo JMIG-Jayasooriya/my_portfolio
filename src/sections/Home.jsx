@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download, Github, Linkedin, Mail, Sparkles, CheckSquare, Award, Terminal } from 'lucide-react';
+import { ArrowRight, Download, Github, Linkedin, Mail, Sparkles, CheckSquare, Award, Terminal, Code2 } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const Home = ({ onOpenCvModal }) => {
@@ -24,11 +24,11 @@ const Home = ({ onOpenCvModal }) => {
           <div className="hero-content">
             <div className="hero-badge">
               <span className="hero-badge-dot"></span>
-              <span>QUALITY ASSURANCE INTERN</span>
+              <span>HELLO, I'M ISUMI</span>
             </div>
 
             <h1 className="hero-title">
-              Hi, I'm <span className="gradient-text">{personalInfo.name}</span>
+              Building reliable digital solutions in <span className="gradient-text">technology.</span>
             </h1>
 
             <p className="hero-subtitle">
@@ -110,25 +110,25 @@ const Home = ({ onOpenCvModal }) => {
                 </span>
               </div>
 
-              {/* Floating Badge 1 */}
+              {/* Floating Badge 1 - QA & Testing */}
               <div className="floating-pill floating-pill-1">
                 <div className="floating-pill-icon">
                   <CheckSquare size={18} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>Focus</div>
+                  <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>Quality Focus</div>
                   <div>QA & Software Testing</div>
                 </div>
               </div>
 
-              {/* Floating Badge 2 */}
+              {/* Floating Badge 2 - Full Stack */}
               <div className="floating-pill floating-pill-2">
                 <div className="floating-pill-icon">
-                  <Sparkles size={18} />
+                  <Code2 size={18} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>Degree</div>
-                  <div>BSc (Hons) Info Systems</div>
+                  <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>Development</div>
+                  <div>Full-Stack Engineering</div>
                 </div>
               </div>
             </div>

@@ -30,7 +30,7 @@ const Footer = () => {
               {personalInfo.shortName}<span>.</span>
             </a>
             <p style={{ color: '#94A3B8', fontSize: '0.9rem', marginTop: '6px' }}>
-              Quality Assurance Intern · Information Systems Undergraduate, SUSL
+              Information Systems Undergraduate · Sabaragamuwa University of Sri Lanka
             </p>
           </div>
 

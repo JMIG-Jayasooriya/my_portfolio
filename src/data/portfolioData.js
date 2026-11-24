@@ -1,11 +1,11 @@
 export const personalInfo = {
   name: "Isumi Gayasha Jayasooriya",
   shortName: "Isumi",
-  title: "Quality Assurance Intern | Information Systems Undergraduate",
-  headline: "Aspiring Quality Assurance Engineer & Software Developer",
-  tagline: "Quality Assurance Intern",
-  bio: "Information Systems undergraduate with hands-on experience in software development through academic projects. Passionate about Quality Assurance, Software Testing, and improving software quality. Possess strong analytical thinking, problem-solving, and attention to detail, with a commitment to continuous learning and using technology to deliver reliable, user-friendly software solutions.",
-  extendedBio: "Currently reading for Bachelor of Honours in Information Systems at Sabaragamuwa University of Sri Lanka (Expected Graduation: 2028). I have completed hands-on full-stack projects using React, Spring Boot, MySQL, and AWS, and gained practical banking operations experience at People's Bank, Kekirawa. Driven by a passion for software testing, quality verification, and user-centric engineering.",
+  title: "Information Systems Undergraduate | Software Development & Quality Assurance",
+  headline: "Building my journey in technology.",
+  tagline: "Information Systems Undergraduate | Tech Enthusiast",
+  bio: "Information Systems undergraduate with hands-on experience in software development and quality assurance through academic and practical projects. Passionate about software engineering, rigorous testing methodologies, and delivering reliable, user-friendly digital solutions. Possess strong analytical thinking, problem-solving, and attention to detail, with a commitment to continuous learning across the entire software lifecycle.",
+  extendedBio: "Currently reading for Bachelor of Honours in Information Systems at Sabaragamuwa University of Sri Lanka (Expected Graduation: 2028). I have completed full-stack projects using React, Spring Boot, MySQL, and AWS, and gained practical operational experience at People's Bank, Kekirawa. Driven by a balanced passion for software engineering, quality assurance, and building reliable systems.",
   location: "Colombo, Sri Lanka",
   email: "isumigayasha20@gmail.com",
   phone: "+94 76 6375625",
@@ -17,12 +17,12 @@ export const personalInfo = {
   degree: "Bachelor of Honours in Information Systems",
   expectedGraduation: "2028",
   school: "Dharmasoka College Ambalangoda - Physical Science Stream",
-  status: "Undergraduate (Graduation: 2028)",
+  status: "Undergraduate (Class of 2028)",
   stats: [
     { label: "Core Projects", value: "3+" },
     { label: "Technical Competencies", value: "20+" },
     { label: "Verified Certifications", value: "3" },
-    { label: "Primary Focus", value: "QA & Testing / Dev" }
+    { label: "Key Strengths", value: "Dev & QA Excellence" }
   ]
 };
 

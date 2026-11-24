@@ -21,7 +21,7 @@ const CvModal = ({ isOpen, onClose }) => {
           <div>
             <span className="badge" style={{ marginBottom: '6px' }}>Curriculum Vitae</span>
             <h2 style={{ fontSize: '1.6rem', color: 'var(--text-heading)' }}>{personalInfo.name}</h2>
-            <p style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.95rem' }}>{personalInfo.tagline}</p>
+            <p style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.95rem' }}>{personalInfo.title}</p>
           </div>
           <button className="btn btn-primary btn-sm" onClick={handleDownload}>
             <Download size={15} />
