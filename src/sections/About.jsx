@@ -10,7 +10,7 @@ const About = () => {
         <SectionTitle
           subtitle="PROFESSIONAL SUMMARY & BACKGROUND"
           title="About Me"
-          description="Information Systems undergraduate passionate about software engineering, quality assurance, and building impactful digital solutions."
+          description="Information Systems undergraduate passionate about technology, digital solutions, and continuous learning."
         />
 
         <div className="about-grid">
@@ -19,10 +19,10 @@ const About = () => {
               I am an Information Systems undergraduate reading for my <strong>{personalInfo.degree}</strong> at <strong>{personalInfo.university}</strong> (Expected Graduation – {personalInfo.expectedGraduation}). I completed my secondary education in the Physical Science Stream at <strong>{personalInfo.school}</strong>.
             </p>
             <p>
-              My journey in technology combines a passion for <strong>software development</strong> with a dedicated focus on <strong>Quality Assurance and software testing</strong>. Having hands-on engineering experience across full-stack academic and personal projects, I understand both how to build complex systems from scratch and how to test, inspect, and validate software to ensure high reliability, performance, and seamless user experiences.
+              My journey in technology stems from a passion for understanding how modern digital systems operate and how technology can be applied to solve real-world problems. Through academic and personal projects, I enjoy learning new tools, designing structured databases, and building clean, responsive interfaces.
             </p>
             <p>
-              I possess strong analytical thinking, problem-solving skills, and meticulous attention to detail, complemented by banking operations exposure at <strong>People's Bank, Kekirawa</strong>. My goal is to collaborate with engineering and quality teams to contribute to reliable, scalable, and user-centric digital products.
+              I possess strong analytical thinking, problem-solving skills, and meticulous attention to detail, complemented by banking operations exposure at <strong>People's Bank, Kekirawa</strong>. My goal is to collaborate with multidisciplinary teams, continuously grow professionally, and contribute to meaningful digital projects.
             </p>
 
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '24px' }}>
@@ -44,21 +44,11 @@ const About = () => {
           <div className="about-features">
             <div className="about-feature-card">
               <div className="about-feature-icon">
-                <CheckCircle size={22} />
-              </div>
-              <h4 className="about-feature-title">Quality Assurance & Testing</h4>
-              <p className="about-feature-desc">
-                Dedicated to test case design, defect tracking, Postman API testing, and maintaining high software reliability standards.
-              </p>
-            </div>
-
-            <div className="about-feature-card">
-              <div className="about-feature-icon">
                 <GraduationCap size={22} />
               </div>
               <h4 className="about-feature-title">Information Systems</h4>
               <p className="about-feature-desc">
-                Honours degree foundation covering database architecture, systems analysis, and enterprise software engineering.
+                Honours degree foundation covering database architecture, systems analysis, and enterprise software principles.
               </p>
             </div>
 
@@ -66,9 +56,19 @@ const About = () => {
               <div className="about-feature-icon">
                 <Code size={22} />
               </div>
-              <h4 className="about-feature-title">Full-Stack Development</h4>
+              <h4 className="about-feature-title">Practical Projects</h4>
               <p className="about-feature-desc">
-                Hands-on development with React.js, Spring Boot, MySQL, and AWS cloud database deployments.
+                Hands-on experience building web applications, designing relational schemas, and deploying cloud services.
+              </p>
+            </div>
+
+            <div className="about-feature-card">
+              <div className="about-feature-icon">
+                <CheckCircle size={22} />
+              </div>
+              <h4 className="about-feature-title">Attention to Detail</h4>
+              <p className="about-feature-desc">
+                Meticulous focus on accuracy, system reliability, and delivering user-friendly, high-quality digital experiences.
               </p>
             </div>
 
@@ -76,9 +76,9 @@ const About = () => {
               <div className="about-feature-icon">
                 <ShieldCheck size={22} />
               </div>
-              <h4 className="about-feature-title">Analytical Problem Solving</h4>
+              <h4 className="about-feature-title">Problem Solving & Teamwork</h4>
               <p className="about-feature-desc">
-                Proven attention to detail, adaptability, and effective cross-functional team communication in group software projects.
+                Analytical mindset, adaptability, and effective communication gained through multi-member team projects.
               </p>
             </div>
           </div>

@@ -1,11 +1,11 @@
 export const personalInfo = {
   name: "Isumi Gayasha Jayasooriya",
   shortName: "Isumi",
-  title: "Information Systems Undergraduate | Software Development & Quality Assurance",
+  title: "Information Systems Undergraduate | Technology Enthusiast",
   headline: "Building my journey in technology.",
-  tagline: "Information Systems Undergraduate | Tech Enthusiast",
-  bio: "Information Systems undergraduate with hands-on experience in software development and quality assurance through academic and practical projects. Passionate about software engineering, rigorous testing methodologies, and delivering reliable, user-friendly digital solutions. Possess strong analytical thinking, problem-solving, and attention to detail, with a commitment to continuous learning across the entire software lifecycle.",
-  extendedBio: "Currently reading for Bachelor of Honours in Information Systems at Sabaragamuwa University of Sri Lanka (Expected Graduation: 2028). I have completed full-stack projects using React, Spring Boot, MySQL, and AWS, and gained practical operational experience at People's Bank, Kekirawa. Driven by a balanced passion for software engineering, quality assurance, and building reliable systems.",
+  tagline: "Information Systems Undergraduate",
+  bio: "Hi, I'm Isumi Gayasha Jayasooriya. I'm an Information Systems undergraduate passionate about technology, solving problems, and creating meaningful digital solutions. I enjoy learning new technologies and applying my knowledge through practical projects.",
+  extendedBio: "Currently reading for Bachelor of Honours in Information Systems at Sabaragamuwa University of Sri Lanka (Expected Graduation: 2028). I have completed hands-on projects using modern web technologies, relational databases, and cloud services, alongside operational experience at People's Bank, Kekirawa. Driven by curiosity, attention to detail, and a commitment to continuous learning.",
   location: "Colombo, Sri Lanka",
   email: "isumigayasha20@gmail.com",
   phone: "+94 76 6375625",
@@ -20,9 +20,9 @@ export const personalInfo = {
   status: "Undergraduate (Class of 2028)",
   stats: [
     { label: "Core Projects", value: "3+" },
-    { label: "Technical Competencies", value: "20+" },
-    { label: "Verified Certifications", value: "3" },
-    { label: "Key Strengths", value: "Dev & QA Excellence" }
+    { label: "Technical Skills", value: "20+" },
+    { label: "Certifications", value: "3" },
+    { label: "Honours Degree", value: "BSc (Hons)" }
   ]
 };
 

@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download, Github, Linkedin, Mail, Sparkles, CheckSquare, Award, Terminal, Code2 } from 'lucide-react';
+import { ArrowRight, Download, Github, Linkedin, Mail, Sparkles, GraduationCap, Award, Terminal } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const Home = ({ onOpenCvModal }) => {
@@ -28,7 +28,7 @@ const Home = ({ onOpenCvModal }) => {
             </div>
 
             <h1 className="hero-title">
-              Building reliable digital solutions in <span className="gradient-text">technology.</span>
+              Building my journey in <span className="gradient-text">technology.</span>
             </h1>
 
             <p className="hero-subtitle">
@@ -110,25 +110,25 @@ const Home = ({ onOpenCvModal }) => {
                 </span>
               </div>
 
-              {/* Floating Badge 1 - QA & Testing */}
+              {/* Floating Badge 1 - Academic Degree */}
               <div className="floating-pill floating-pill-1">
                 <div className="floating-pill-icon">
-                  <CheckSquare size={18} />
+                  <GraduationCap size={18} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>Quality Focus</div>
-                  <div>QA & Software Testing</div>
+                  <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>Degree</div>
+                  <div>BSc (Hons) Info Systems</div>
                 </div>
               </div>
 
-              {/* Floating Badge 2 - Full Stack */}
+              {/* Floating Badge 2 - University Institution */}
               <div className="floating-pill floating-pill-2">
                 <div className="floating-pill-icon">
-                  <Code2 size={18} />
+                  <Sparkles size={18} />
                 </div>
                 <div>
-                  <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>Development</div>
-                  <div>Full-Stack Engineering</div>
+                  <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>University</div>
+                  <div>Sabaragamuwa Univ</div>
                 </div>
               </div>
             </div>
