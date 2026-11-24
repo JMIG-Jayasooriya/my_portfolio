@@ -22,7 +22,7 @@ const CertificateModal = ({ cert, onClose }) => {
           </div>
         </div>
 
-        <div style={{ padding: '16px', backgroundColor: '#F8FAFC', borderRadius: '10px', border: '1px solid var(--border-color)', marginBottom: '24px' }}>
+        <div style={{ padding: '16px', backgroundColor: 'var(--bg-card-subtle)', borderRadius: '10px', border: '1px solid var(--border-color)', marginBottom: '24px' }}>
           <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)', marginBottom: '4px' }}>CREDENTIAL ID</p>
           <p style={{ fontSize: '1rem', fontWeight: 700, color: 'var(--primary)', fontFamily: 'monospace' }}>{cert.idCode}</p>
         </div>

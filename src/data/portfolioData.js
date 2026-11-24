@@ -147,12 +147,12 @@ export const education = [
   {
     id: "susl",
     institution: "Sabaragamuwa University of Sri Lanka",
-    faculty: "Faculty of Computing - Department of Computing and Information Systems",
+    faculty: "Faculty of Computing - Dept. of Computing & Information Systems",
     degree: "Bachelor of Honours in Information Systems",
     period: "Expected Graduation – 2028",
-    location: "Belihuloya / Sri Lanka",
+    location: "Belihuloya, Sri Lanka",
     status: "Undergraduate",
-    description: "Undergraduate honours degree programme providing in-depth theoretical and practical education in information systems, software development, database architecture, software testing, and enterprise systems.",
+    description: "Honours degree programme focusing on software engineering, database architecture, testing methodologies, and enterprise information systems.",
     keyModules: [
       "Information Systems Principles",
       "Object Oriented Programming (Java)",
@@ -167,10 +167,10 @@ export const education = [
     institution: "Dharmasoka College Ambalangoda",
     faculty: "Physical Science Stream",
     degree: "Secondary Education - Physical Science Stream",
-    period: "Completed",
+    period: "G.C.E. Advanced Level",
     location: "Ambalangoda, Sri Lanka",
     status: "Completed",
-    description: "Completed secondary education in the Physical Science stream, building foundational mathematical, logical, and analytical problem-solving skills.",
+    description: "Rigorous secondary education in physics, chemistry, and combined mathematics, developing strong logical and analytical problem-solving skills.",
     keyModules: [
       "Combined Mathematics",
       "Physics",

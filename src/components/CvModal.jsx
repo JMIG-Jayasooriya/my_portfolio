@@ -57,7 +57,7 @@ const CvModal = ({ isOpen, onClose }) => {
         {/* CV Document Container */}
         <div className="cv-modal-body" style={{ maxHeight: '68vh', overflowY: 'auto', paddingRight: '8px' }}>
           {/* Contact Details Bar */}
-          <div className="cv-contact-bar" style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', padding: '12px 16px', backgroundColor: '#F8FAFC', borderRadius: '8px', border: '1px solid var(--border-color)', marginBottom: '20px', fontSize: '0.88rem' }}>
+          <div className="cv-contact-bar" style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', padding: '12px 16px', backgroundColor: 'var(--bg-card-subtle)', borderRadius: '8px', border: '1px solid var(--border-color)', marginBottom: '20px', fontSize: '0.88rem' }}>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Phone size={14} color="var(--primary)" /> {personalInfo.phone}</span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Mail size={14} color="var(--primary)" /> {personalInfo.email}</span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><MapPin size={14} color="var(--primary)" /> {personalInfo.location}</span>
@@ -170,7 +170,7 @@ const CvModal = ({ isOpen, onClose }) => {
             </h4>
             <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(260px, 1fr))', gap: '16px' }}>
               {references.map((ref) => (
-                <div key={ref.id} style={{ padding: '12px 14px', backgroundColor: '#F8FAFC', borderRadius: '8px', border: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
+                <div key={ref.id} style={{ padding: '12px 14px', backgroundColor: 'var(--bg-card-subtle)', borderRadius: '8px', border: '1px solid var(--border-color)', fontSize: '0.85rem' }}>
                   <div style={{ fontWeight: 700, color: 'var(--text-heading)', fontSize: '0.92rem' }}>{ref.name}</div>
                   <div style={{ color: 'var(--primary)', fontWeight: 600 }}>{ref.role}</div>
                   <div style={{ color: 'var(--text-muted)', marginBottom: '6px' }}>

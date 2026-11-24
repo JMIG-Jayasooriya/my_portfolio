@@ -118,7 +118,7 @@ const Contact = () => {
               </div>
             </div>
 
-            <div style={{ padding: '16px', backgroundColor: '#F8FAFC', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
+            <div style={{ padding: '16px', backgroundColor: 'var(--bg-card-subtle)', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
               <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
                 <strong>Immediate Status:</strong> Open for Internship Opportunities & Professional Collaborations.
               </p>
@@ -129,7 +129,7 @@ const Contact = () => {
           <div className="contact-form-card">
             {submitted ? (
               <div style={{ textAlign: 'center', padding: '30px 10px' }}>
-                <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: '#E8EEFF', color: 'var(--primary)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 18px auto' }}>
+                <div style={{ width: '64px', height: '64px', borderRadius: '50%', backgroundColor: 'var(--primary-soft)', color: 'var(--primary-light)', display: 'flex', alignItems: 'center', justifyContent: 'center', margin: '0 auto 18px auto' }}>
                   <CheckCircle2 size={36} />
                 </div>
                 <h3 style={{ fontSize: '1.4rem', color: 'var(--text-heading)', marginBottom: '8px' }}>
@@ -152,7 +152,7 @@ const Contact = () => {
                 </h3>
 
                 {error && (
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '12px', backgroundColor: '#FEF2F2', border: '1px solid #FCA5A5', borderRadius: '8px', color: '#B91C1C', fontSize: '0.88rem', marginBottom: '18px' }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '12px', backgroundColor: 'rgba(239, 68, 68, 0.15)', border: '1px solid rgba(239, 68, 68, 0.3)', borderRadius: '8px', color: '#F87171', fontSize: '0.88rem', marginBottom: '18px' }}>
                     <AlertCircle size={18} />
                     <span>{error}</span>
                   </div>
