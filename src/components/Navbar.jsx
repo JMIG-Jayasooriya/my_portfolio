@@ -62,7 +62,7 @@ const Navbar = ({ onOpenCvModal }) => {
     <>
       <header className={`navbar-wrapper ${isScrolled ? 'navbar-scrolled' : ''}`}>
         <div className="container navbar-container">
-          <a href="#home" className="navbar-brand" onClick={(e) => handleNavClick(e, '#home')}>
+          <a href="#home" className="navbar-brand no-underline" style={{ textDecoration: 'none' }} onClick={(e) => handleNavClick(e, '#home')}>
             {personalInfo.shortName}<span>.</span>
           </a>
 
@@ -71,7 +71,8 @@ const Navbar = ({ onOpenCvModal }) => {
               <a
                 key={item.label}
                 href={item.href}
-                className={`nav-link ${activeSection === item.href.substring(1) ? 'active' : ''}`}
+                className={`nav-link no-underline ${activeSection === item.href.substring(1) ? 'active' : ''}`}
+                style={{ textDecoration: 'none' }}
                 onClick={(e) => handleNavClick(e, item.href)}
               >
                 {item.label}
@@ -107,7 +108,8 @@ const Navbar = ({ onOpenCvModal }) => {
             <a
               key={item.label}
               href={item.href}
-              className={`mobile-nav-link ${activeSection === item.href.substring(1) ? 'active' : ''}`}
+              className={`mobile-nav-link no-underline ${activeSection === item.href.substring(1) ? 'active' : ''}`}
+              style={{ textDecoration: 'none' }}
               onClick={(e) => handleNavClick(e, item.href)}
             >
               {item.label}

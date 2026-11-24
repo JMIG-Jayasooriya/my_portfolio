@@ -1,84 +1,83 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
 import { personalInfo } from '../data/portfolioData';
-import { GraduationCap, Code, CheckCircle, Compass, Sparkles, MapPin, Building, ShieldCheck } from 'lucide-react';
+import { GraduationCap, Code2, Database, Sparkles, MapPin, Building2, Calendar } from 'lucide-react';
 
 const About = () => {
   return (
     <section id="about" className="section section-alt">
       <div className="container">
         <SectionTitle
-          subtitle="PROFESSIONAL SUMMARY & BACKGROUND"
+          subtitle="GET TO KNOW ME"
           title="About Me"
-          description="Information Systems undergraduate passionate about technology, digital solutions, and continuous learning."
+          description="A brief look into my academic background, technical focus, and interests."
         />
 
         <div className="about-grid">
+          {/* Left: Concise Bio */}
           <div className="about-text">
-            <p>
-              I am an Information Systems undergraduate reading for my <strong>{personalInfo.degree}</strong> at <strong>{personalInfo.university}</strong> (Expected Graduation – {personalInfo.expectedGraduation}). I completed my secondary education in the Physical Science Stream at <strong>{personalInfo.school}</strong>.
+            <p style={{ fontSize: '1.08rem', lineHeight: '1.7', color: 'var(--text-heading)', marginBottom: '16px' }}>
+              I am an <strong>Information Systems undergraduate</strong> reading for my <strong>{personalInfo.degree}</strong> at <strong>{personalInfo.university}</strong>.
             </p>
-            <p>
-              My journey in technology stems from a passion for understanding how modern digital systems operate and how technology can be applied to solve real-world problems. Through academic and personal projects, I enjoy learning new tools, designing structured databases, and building clean, responsive interfaces.
-            </p>
-            <p>
-              I possess strong analytical thinking, problem-solving skills, and meticulous attention to detail, complemented by banking operations exposure at <strong>People's Bank, Kekirawa</strong>. My goal is to collaborate with multidisciplinary teams, continuously grow professionally, and contribute to meaningful digital projects.
+            <p style={{ fontSize: '0.96rem', lineHeight: '1.7', color: 'var(--text-body)', marginBottom: '24px' }}>
+              Passionate about software engineering, database design, and creating practical web solutions. I enjoy learning modern technologies, writing clean code, and solving real-world problems through hands-on projects.
             </p>
 
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', marginTop: '24px' }}>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-heading)', fontWeight: 600, fontSize: '0.92rem' }}>
-                <MapPin size={18} color="var(--primary)" />
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '14px', paddingTop: '8px' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-heading)', fontWeight: 600, fontSize: '0.88rem', padding: '6px 14px', backgroundColor: 'var(--bg-card-subtle)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+                <MapPin size={16} color="var(--primary-light)" />
                 <span>{personalInfo.location}</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-heading)', fontWeight: 600, fontSize: '0.92rem' }}>
-                <Building size={18} color="var(--primary)" />
-                <span>{personalInfo.university}</span>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-heading)', fontWeight: 600, fontSize: '0.88rem', padding: '6px 14px', backgroundColor: 'var(--bg-card-subtle)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+                <Building2 size={16} color="var(--primary-light)" />
+                <span>Sabaragamuwa University</span>
               </div>
-              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-heading)', fontWeight: 600, fontSize: '0.92rem' }}>
-                <Sparkles size={18} color="var(--primary)" />
+              <div style={{ display: 'flex', alignItems: 'center', gap: '8px', color: 'var(--text-heading)', fontWeight: 600, fontSize: '0.88rem', padding: '6px 14px', backgroundColor: 'var(--bg-card-subtle)', borderRadius: '8px', border: '1px solid var(--border-color)' }}>
+                <Calendar size={16} color="var(--primary-light)" />
                 <span>Class of {personalInfo.expectedGraduation}</span>
               </div>
             </div>
           </div>
 
+          {/* Right: 4 Concise Essential Pillars */}
           <div className="about-features">
             <div className="about-feature-card">
               <div className="about-feature-icon">
-                <GraduationCap size={22} />
+                <GraduationCap size={20} />
               </div>
               <h4 className="about-feature-title">Information Systems</h4>
               <p className="about-feature-desc">
-                Honours degree foundation covering database architecture, systems analysis, and enterprise software principles.
+                Foundations in systems analysis, software engineering, and enterprise architecture.
               </p>
             </div>
 
             <div className="about-feature-card">
               <div className="about-feature-icon">
-                <Code size={22} />
+                <Code2 size={20} />
               </div>
-              <h4 className="about-feature-title">Practical Projects</h4>
+              <h4 className="about-feature-title">Web Development</h4>
               <p className="about-feature-desc">
-                Hands-on experience building web applications, designing relational schemas, and deploying cloud services.
+                Hands-on experience building full-stack applications with React, Java, and modern tools.
               </p>
             </div>
 
             <div className="about-feature-card">
               <div className="about-feature-icon">
-                <CheckCircle size={22} />
+                <Database size={20} />
               </div>
-              <h4 className="about-feature-title">Attention to Detail</h4>
+              <h4 className="about-feature-title">Database Design</h4>
               <p className="about-feature-desc">
-                Meticulous focus on accuracy, system reliability, and delivering user-friendly, high-quality digital experiences.
+                Designing structured relational schemas and working with MySQL and PostgreSQL.
               </p>
             </div>
 
             <div className="about-feature-card">
               <div className="about-feature-icon">
-                <ShieldCheck size={22} />
+                <Sparkles size={20} />
               </div>
-              <h4 className="about-feature-title">Problem Solving & Teamwork</h4>
+              <h4 className="about-feature-title">Problem Solving</h4>
               <p className="about-feature-desc">
-                Analytical mindset, adaptability, and effective communication gained through multi-member team projects.
+                Strong attention to detail, adaptability, and active teamwork on collaborative projects.
               </p>
             </div>
           </div>
