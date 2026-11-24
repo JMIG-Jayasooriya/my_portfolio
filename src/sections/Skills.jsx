@@ -21,7 +21,16 @@ import {
   Github,
   Laptop,
   Binary,
-  Figma
+  Figma,
+  Zap,
+  ShieldCheck,
+  Key,
+  Cloud,
+  Globe,
+  Users,
+  Compass,
+  MessageSquare,
+  Sparkles
 } from 'lucide-react';
 
 const iconMap = {
@@ -45,7 +54,16 @@ const iconMap = {
   Laptop,
   Binary,
   Figma,
-  Atom: Code2 // fallback
+  Zap,
+  ShieldCheck,
+  Key,
+  Cloud,
+  Globe,
+  Users,
+  Compass,
+  MessageSquare,
+  Sparkles,
+  Atom: Code2
 };
 
 const Skills = () => {
@@ -53,12 +71,13 @@ const Skills = () => {
 
   const filterOptions = [
     'All',
-    'Programming',
+    'Software & API Testing',
+    'Programming Languages',
     'Frontend Development',
-    'Backend Development',
-    'Database Management',
-    'Quality Assurance & Testing',
-    'Tools & Platforms'
+    'Backend & Authentication',
+    'Databases & Cloud',
+    'Development & Design Tools',
+    'Soft Skills'
   ];
 
   const filteredCategories = selectedFilter === 'All'
@@ -69,9 +88,9 @@ const Skills = () => {
     <section id="skills" className="section">
       <div className="container">
         <SectionTitle
-          subtitle="CORE COMPETENCIES"
-          title="Technical Skills"
-          description="Organized by specialization areas. Focused on practical skills applied across projects and coursework."
+          subtitle="TECHNICAL SKILLS & COMPETENCIES"
+          title="Skills & Technologies"
+          description="Proficiencies across software quality assurance, full-stack development, cloud deployment, and design tools."
         />
 
         {/* Category Filter Pills */}

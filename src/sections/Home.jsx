@@ -1,5 +1,5 @@
 import React from 'react';
-import { ArrowRight, Download, Github, Linkedin, Mail, Sparkles, Code2, Award, Terminal } from 'lucide-react';
+import { ArrowRight, Download, Github, Linkedin, Mail, Sparkles, CheckSquare, Award, Terminal } from 'lucide-react';
 import { personalInfo } from '../data/portfolioData';
 
 const Home = ({ onOpenCvModal }) => {
@@ -24,11 +24,11 @@ const Home = ({ onOpenCvModal }) => {
           <div className="hero-content">
             <div className="hero-badge">
               <span className="hero-badge-dot"></span>
-              <span>HELLO, I'M ISUMI</span>
+              <span>QUALITY ASSURANCE INTERN</span>
             </div>
 
             <h1 className="hero-title">
-              Building my journey in <span className="gradient-text">technology.</span>
+              Hi, I'm <span className="gradient-text">{personalInfo.name}</span>
             </h1>
 
             <p className="hero-subtitle">
@@ -53,7 +53,7 @@ const Home = ({ onOpenCvModal }) => {
                 className="btn btn-secondary"
               >
                 <Download size={17} />
-                <span>Download CV</span>
+                <span>View / Download CV</span>
               </button>
 
               <button
@@ -101,20 +101,23 @@ const Home = ({ onOpenCvModal }) => {
                   <span className="hero-avatar-initials">IG</span>
                 </div>
                 <h3 className="hero-visual-name">{personalInfo.name}</h3>
-                <p className="hero-visual-role">{personalInfo.university}</p>
+                <p className="hero-visual-role">{personalInfo.tagline}</p>
                 <span style={{ fontSize: '0.8rem', color: '#93C5FD', marginTop: '4px' }}>
-                  Faculty of Computing
+                  {personalInfo.university}
+                </span>
+                <span style={{ fontSize: '0.74rem', color: '#CBD5E1', marginTop: '2px' }}>
+                  Expected Graduation: {personalInfo.expectedGraduation}
                 </span>
               </div>
 
               {/* Floating Badge 1 */}
               <div className="floating-pill floating-pill-1">
                 <div className="floating-pill-icon">
-                  <Code2 size={18} />
+                  <CheckSquare size={18} />
                 </div>
                 <div>
                   <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>Focus</div>
-                  <div>Full-Stack & QA</div>
+                  <div>QA & Software Testing</div>
                 </div>
               </div>
 
@@ -125,7 +128,7 @@ const Home = ({ onOpenCvModal }) => {
                 </div>
                 <div>
                   <div style={{ fontSize: '0.74rem', color: 'var(--text-muted)' }}>Degree</div>
-                  <div>Computing Undergrad</div>
+                  <div>BSc (Hons) Info Systems</div>
                 </div>
               </div>
             </div>
