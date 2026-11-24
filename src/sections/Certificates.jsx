@@ -13,7 +13,7 @@ const Certificates = () => {
         <SectionTitle
           subtitle="CREDENTIALS & COURSES"
           title="Certifications"
-          description="Verified certifications covering full-stack development, Java, software testing, and database architecture."
+          description="Verified course certifications across Software Testing Fundamentals (Microsoft), React (Meta), and JavaScript (IBM)."
         />
 
         <div className="cert-grid">

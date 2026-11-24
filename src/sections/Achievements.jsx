@@ -1,13 +1,12 @@
 import React from 'react';
 import SectionTitle from '../components/SectionTitle';
 import { achievements } from '../data/portfolioData';
-import { Trophy, Star, Users, Award, ShieldCheck } from 'lucide-react';
+import { Trophy, Star, Users, Compass, ShieldCheck, Award } from 'lucide-react';
 
 const iconByCategory = {
-  Competition: Trophy,
-  Academics: Star,
-  'Volunteering & Leadership': Users,
-  Leadership: ShieldCheck
+  'Leadership & Community': Users,
+  'Extracurricular & Athletics': Trophy,
+  'Extracurricular & Outdoor': Compass
 };
 
 const Achievements = () => {
@@ -15,9 +14,9 @@ const Achievements = () => {
     <section id="achievements" className="section section-alt">
       <div className="container">
         <SectionTitle
-          subtitle="RECOGNITION & PARTICIPATION"
-          title="Achievements & Activities"
-          description="Honours, extracurricular milestones, team initiatives, and leadership activities."
+          subtitle="LEADERSHIP & ENGAGEMENT"
+          title="Leadership & Extracurricular Activities"
+          description="Active involvement across university clubs, Rotaract community service, athletic representation, and outdoor societies."
         />
 
         <div className="achievements-grid">

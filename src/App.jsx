@@ -11,6 +11,7 @@ import Experience from './sections/Experience';
 import Education from './sections/Education';
 import Certificates from './sections/Certificates';
 import Achievements from './sections/Achievements';
+import References from './sections/References';
 import Contact from './sections/Contact';
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
         <Education />
         <Certificates />
         <Achievements />
+        <References />
         <Contact />
       </main>
 

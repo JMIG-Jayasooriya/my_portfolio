@@ -16,6 +16,8 @@ const Footer = () => {
     { label: 'Projects', href: '#projects' },
     { label: 'Experience', href: '#experience' },
     { label: 'Education', href: '#education' },
+    { label: 'Certifications', href: '#certifications' },
+    { label: 'References', href: '#references' },
     { label: 'Contact', href: '#contact' },
   ];
 
@@ -28,7 +30,7 @@ const Footer = () => {
               {personalInfo.shortName}<span>.</span>
             </a>
             <p style={{ color: '#94A3B8', fontSize: '0.9rem', marginTop: '6px' }}>
-              Computing Undergraduate · Sabaragamuwa University of Sri Lanka
+              Quality Assurance Intern · Information Systems Undergraduate, SUSL
             </p>
           </div>
 
@@ -49,7 +51,7 @@ const Footer = () => {
         <div className="footer-bottom">
           <p>© {new Date().getFullYear()} {personalInfo.name}. All rights reserved.</p>
           <p style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
-            Built with React & modern web principles
+            Built with React, Vite & modern web standards
           </p>
         </div>
       </div>
