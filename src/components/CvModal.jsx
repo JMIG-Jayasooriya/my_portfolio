@@ -1,23 +1,23 @@
 import React from 'react';
-import { X, Download, FileText, CheckCircle, GraduationCap, Building2, Briefcase, Award, Phone, Mail, MapPin, ExternalLink } from 'lucide-react';
+import { X, Download, Printer, Phone, Mail, MapPin } from 'lucide-react';
 import { personalInfo, education, experience, certifications, achievements, references, projects } from '../data/portfolioData';
 
 const CvModal = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
 
-  const handleDownload = () => {
+  const handlePrint = () => {
     window.print();
   };
 
   return (
-    <div className="modal-overlay" onClick={onClose}>
-      <div className="modal-dialog" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '850px' }}>
-        <button className="modal-close-btn" onClick={onClose} aria-label="Close CV modal">
+    <div className="modal-overlay cv-modal-overlay" onClick={onClose}>
+      <div className="modal-dialog cv-modal-dialog" onClick={(e) => e.stopPropagation()} style={{ maxWidth: '850px' }}>
+        <button className="modal-close-btn cv-no-print" onClick={onClose} aria-label="Close CV modal">
           <X size={20} />
         </button>
 
         {/* Modal Header */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid var(--border-color)', paddingBottom: '16px', marginBottom: '20px' }}>
+        <div className="cv-modal-header" style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: '1px solid var(--border-color)', paddingBottom: '16px', marginBottom: '20px' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
             <img
               src={personalInfo.profileImage || "/images/profile.jpg"}
@@ -30,23 +30,41 @@ const CvModal = ({ isOpen, onClose }) => {
               <p style={{ color: 'var(--primary)', fontWeight: 600, fontSize: '0.9rem' }}>{personalInfo.title}</p>
             </div>
           </div>
-          <button className="btn btn-primary btn-sm" onClick={handleDownload}>
-            <Download size={15} />
-            <span>Print / Save PDF</span>
-          </button>
+
+          <div className="cv-modal-header-actions" style={{ display: 'flex', gap: '8px' }}>
+            <a
+              href="/Isumi_Gayasha_Jayasooriya_CV.pdf"
+              download="Isumi_Gayasha_Jayasooriya_CV.pdf"
+              className="btn btn-primary btn-sm"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Download original PDF CV file directly"
+            >
+              <Download size={15} />
+              <span>Download PDF</span>
+            </a>
+            <button
+              className="btn btn-secondary btn-sm cv-no-print"
+              onClick={handlePrint}
+              title="Print clean CV or save as PDF via browser"
+            >
+              <Printer size={15} />
+              <span>Print CV</span>
+            </button>
+          </div>
         </div>
 
         {/* CV Document Container */}
-        <div style={{ maxHeight: '68vh', overflowY: 'auto', paddingRight: '8px' }}>
+        <div className="cv-modal-body" style={{ maxHeight: '68vh', overflowY: 'auto', paddingRight: '8px' }}>
           {/* Contact Details Bar */}
-          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', padding: '12px 16px', backgroundColor: '#F8FAFC', borderRadius: '8px', border: '1px solid var(--border-color)', marginBottom: '20px', fontSize: '0.88rem' }}>
+          <div className="cv-contact-bar" style={{ display: 'flex', flexWrap: 'wrap', gap: '16px', padding: '12px 16px', backgroundColor: '#F8FAFC', borderRadius: '8px', border: '1px solid var(--border-color)', marginBottom: '20px', fontSize: '0.88rem' }}>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Phone size={14} color="var(--primary)" /> {personalInfo.phone}</span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><Mail size={14} color="var(--primary)" /> {personalInfo.email}</span>
             <span style={{ display: 'flex', alignItems: 'center', gap: '6px' }}><MapPin size={14} color="var(--primary)" /> {personalInfo.location}</span>
           </div>
 
           {/* Professional Summary */}
-          <div style={{ marginBottom: '22px' }}>
+          <div className="cv-section-block" style={{ marginBottom: '22px' }}>
             <h4 style={{ fontSize: '0.95rem', color: 'var(--text-heading)', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--primary)', paddingBottom: '4px', marginBottom: '10px' }}>
               Professional Summary
             </h4>
@@ -56,7 +74,7 @@ const CvModal = ({ isOpen, onClose }) => {
           </div>
 
           {/* Education */}
-          <div style={{ marginBottom: '22px' }}>
+          <div className="cv-section-block" style={{ marginBottom: '22px' }}>
             <h4 style={{ fontSize: '0.95rem', color: 'var(--text-heading)', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--primary)', paddingBottom: '4px', marginBottom: '10px' }}>
               Education
             </h4>
@@ -72,7 +90,7 @@ const CvModal = ({ isOpen, onClose }) => {
           </div>
 
           {/* Core Projects */}
-          <div style={{ marginBottom: '22px' }}>
+          <div className="cv-section-block" style={{ marginBottom: '22px' }}>
             <h4 style={{ fontSize: '0.95rem', color: 'var(--text-heading)', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--primary)', paddingBottom: '4px', marginBottom: '10px' }}>
               Key Projects
             </h4>
@@ -95,7 +113,7 @@ const CvModal = ({ isOpen, onClose }) => {
           </div>
 
           {/* Experience */}
-          <div style={{ marginBottom: '22px' }}>
+          <div className="cv-section-block" style={{ marginBottom: '22px' }}>
             <h4 style={{ fontSize: '0.95rem', color: 'var(--text-heading)', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--primary)', paddingBottom: '4px', marginBottom: '10px' }}>
               Experience
             </h4>
@@ -115,7 +133,7 @@ const CvModal = ({ isOpen, onClose }) => {
           </div>
 
           {/* Certifications */}
-          <div style={{ marginBottom: '22px' }}>
+          <div className="cv-section-block" style={{ marginBottom: '22px' }}>
             <h4 style={{ fontSize: '0.95rem', color: 'var(--text-heading)', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--primary)', paddingBottom: '4px', marginBottom: '10px' }}>
               Certifications
             </h4>
@@ -132,7 +150,7 @@ const CvModal = ({ isOpen, onClose }) => {
           </div>
 
           {/* Leadership & Extracurricular Activities */}
-          <div style={{ marginBottom: '22px' }}>
+          <div className="cv-section-block" style={{ marginBottom: '22px' }}>
             <h4 style={{ fontSize: '0.95rem', color: 'var(--text-heading)', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--primary)', paddingBottom: '4px', marginBottom: '10px' }}>
               Leadership & Extracurricular Activities
             </h4>
@@ -146,7 +164,7 @@ const CvModal = ({ isOpen, onClose }) => {
           </div>
 
           {/* References */}
-          <div style={{ marginBottom: '16px' }}>
+          <div className="cv-section-block" style={{ marginBottom: '16px' }}>
             <h4 style={{ fontSize: '0.95rem', color: 'var(--text-heading)', textTransform: 'uppercase', letterSpacing: '0.06em', borderBottom: '2px solid var(--primary)', paddingBottom: '4px', marginBottom: '12px' }}>
               References
             </h4>
@@ -167,7 +185,7 @@ const CvModal = ({ isOpen, onClose }) => {
         </div>
 
         {/* Modal Action Footer */}
-        <div style={{ display: 'flex', justifyContent: 'flex-end', gap: '12px', marginTop: '20px', paddingTop: '16px', borderTop: '1px solid var(--border-color)' }}>
+        <div className="cv-modal-footer" style={{ display: 'flex', justifyContent: 'flex-end', flexWrap: 'wrap', gap: '12px', marginTop: '20px', paddingTop: '16px', borderTop: '1px solid var(--border-color)' }}>
           <button className="btn btn-outline" onClick={onClose}>
             Close
           </button>
@@ -177,9 +195,20 @@ const CvModal = ({ isOpen, onClose }) => {
           >
             Email Isumi Directly
           </a>
-          <button className="btn btn-primary" onClick={handleDownload}>
+          <a
+            href="/Isumi_Gayasha_Jayasooriya_CV.pdf"
+            download="Isumi_Gayasha_Jayasooriya_CV.pdf"
+            className="btn btn-primary"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="Download original PDF CV file directly"
+          >
             <Download size={16} />
-            <span>Print / Save as PDF</span>
+            <span>Download PDF</span>
+          </a>
+          <button className="btn btn-secondary cv-no-print" onClick={handlePrint} title="Print clean CV or save as PDF via browser">
+            <Printer size={16} />
+            <span>Print CV</span>
           </button>
         </div>
       </div>

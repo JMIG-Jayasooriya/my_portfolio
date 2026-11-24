@@ -20,7 +20,7 @@ export const personalInfo = {
   school: "Dharmasoka College Ambalangoda - Physical Science Stream",
   status: "Undergraduate (Class of 2028)",
   stats: [
-    { label: "Core Projects", value: "3+" },
+    { label: "Core Projects", value: "3" },
     { label: "Technical Skills", value: "20+" },
     { label: "Certifications", value: "3" },
     { label: "Honours Degree", value: "BSc (Hons)" }
@@ -66,6 +66,7 @@ export const projects = [
     title: "V-MAS – Smart Vehicle Service Management System",
     category: "Full Stack",
     projectType: "Group Capstone Project",
+    image: "/images/v-mas.jpg",
     shortDescription: "A full-stack web application developed to digitalize vehicle service workflows and fleet management processes with real-time automated alerts.",
     fullDescription: "V-MAS is an enterprise-grade Smart Vehicle Service Management System. Developed as a multi-member group capstone project, it digitalizes end-to-end vehicle service tracking, maintenance logs, and fleet administrative operations. Powered by a robust React frontend and a Spring Boot RESTful backend connected to AWS RDS MySQL.",
     technologies: ["React.js", "Spring Boot", "Java", "MySQL", "JWT", "AWS (RDS/S3)", "REST API"],
@@ -86,6 +87,7 @@ export const projects = [
     title: "Travel Memories – Personal Digital Travel Journal Web Application",
     category: "Full Stack",
     projectType: "Individual Project",
+    image: "/images/travel-memories.jpg",
     shortDescription: "An interactive personal travel journal web application featuring interactive map pinning, trip memories, itineraries, and expense records.",
     fullDescription: "Travel Memories is a personal digital travel journal designed to help users record itineraries, journal trip experiences, upload and curate memory albums, track travel budgets, and pin geographical coordinates via interactive map interfaces.",
     technologies: ["React.js", "Spring Boot", "Java", "MySQL", "Spring Security", "JWT", "REST API", "Leaflet.js", "Tailwind CSS"],
@@ -120,25 +122,6 @@ export const projects = [
     demo: "#",
     featured: true,
     badge: "Individual Project"
-  },
-  {
-    id: "qa-testing-suite",
-    title: "Quality Assurance & API Testing Practice",
-    category: "Testing & QA",
-    projectType: "Academic / Practical Suite",
-    shortDescription: "Comprehensive quality assurance suite covering test plan structuring, manual test case authoring, defect reporting, and Postman API verification.",
-    fullDescription: "Applying software testing methodologies learned through Microsoft and university coursework. This project encompasses test design techniques (boundary value analysis, equivalence partitioning), comprehensive defect logging, regression test runs, and Postman API request collection test automation.",
-    technologies: ["Manual Testing", "Test Case Design", "Postman", "API Validation", "Defect Tracking"],
-    highlights: [
-      "Authored test plans, test scenarios, and comprehensive manual test cases covering functional and edge cases",
-      "Constructed Postman collections with automated test assertions for REST API endpoint status, latency, and payload schema validation",
-      "Documented defect reports with clear reproduction steps, expected vs. actual outcomes, and severity prioritization",
-      "Grounded in Software Testing Lifecycle (STLC) and standard QA best practices"
-    ],
-    github: "https://github.com/JMIG-Jayasooriya",
-    demo: "#",
-    featured: true,
-    badge: "QA & Testing"
   }
 ];
 

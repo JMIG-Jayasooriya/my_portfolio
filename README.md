@@ -56,7 +56,7 @@ The portfolio uses a **Modern Ivory + Deep Navy + Royal Blue** palette designed 
 - **💻 Simplified Skills Showcase**: 6 clear categories presenting technical skills, frameworks, and databases with clean pill badges.
 - **🎯 Featured Projects Grid**:
   - Direct links to verified GitHub repositories.
-  - Live screenshots (e.g. *ISHU CAKE*).
+  - Live screenshots for all featured applications (V-MAS, Travel Memories, ISHU CAKE).
   - Detailed feature modals detailing architecture, tools, and technical highlights.
 - **📜 Verified Certifications**: Credentials with verification modal links for Microsoft, Meta, and IBM Coursera courses.
 - **🤝 Academic & Industry References**: Direct reference cards for university training coordinators and software engineering mentors.
@@ -84,12 +84,6 @@ The portfolio uses a **Modern Ivory + Deep Navy + Royal Blue** palette designed 
 - **Highlights**: Modern artisanal cake shop storefront featuring interactive menus, category filtering, and mobile-first design.
 - **Repository**: [JMIG-Jayasooriya/my-project](https://github.com/JMIG-Jayasooriya/my-project)
 
-### 4. 🔍 Quality Assurance & API Testing Practice
-- **Type**: Academic / Practical Suite
-- **Tech Stack**: Manual Testing, Test Case Design, Postman, API Validation, Defect Tracking
-- **Highlights**: End-to-end test scenarios, boundary value analysis, defect reports, and Postman REST API collections.
-- **Profile**: [JMIG-Jayasooriya](https://github.com/JMIG-Jayasooriya)
-
 ---
 
 ## 🛠️ Project Structure
@@ -101,6 +95,8 @@ my_portfolio/
 │   ├── profile.jpg                   # Profile picture
 │   └── images/
 │       ├── profile.jpg               # Professional headshot
+│       ├── v-mas.jpg                 # V-MAS portal screenshot
+│       ├── travel-memories.jpg       # Travel Memories screenshot
 │       └── ishu-cake.jpg             # ISHU CAKE project screenshot
 ├── src/
 │   ├── components/

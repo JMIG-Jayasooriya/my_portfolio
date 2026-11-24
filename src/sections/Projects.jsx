@@ -8,7 +8,7 @@ const Projects = () => {
   const [selectedCategory, setSelectedCategory] = useState('All');
   const [activeModalProject, setActiveModalProject] = useState(null);
 
-  const filterTabs = ['All', 'Full Stack', 'Frontend', 'Testing & QA'];
+  const filterTabs = ['All', 'Full Stack', 'Frontend'];
 
   const displayedProjects = selectedCategory === 'All'
     ? projects
@@ -20,7 +20,7 @@ const Projects = () => {
         <SectionTitle
           subtitle="PRACTICAL WORK & SOFTWARE PROJECTS"
           title="Featured Projects"
-          description="A showcase of group capstone systems, individual applications, and software quality assurance practice."
+          description="A showcase of group capstone systems and individual web applications developed using modern technologies."
         />
 
         {/* Category Filters */}
