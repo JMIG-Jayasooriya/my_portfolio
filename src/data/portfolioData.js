@@ -28,76 +28,34 @@ export const personalInfo = {
 
 export const skillCategories = [
   {
-    category: "Software & API Testing",
-    description: "Quality assurance methodologies, test execution, defect detection, and API validation",
-    skills: [
-      { name: "Software Testing", level: "Core Focus", icon: "CheckSquare", tag: "STLC, Test Cases & Quality" },
-      { name: "API Testing (Postman)", level: "Proficient", icon: "Send", tag: "Endpoint Verification & Collections" },
-      { name: "Defect Analysis & Tracking", level: "Intermediate", icon: "Bug", tag: "Issue Lifecycle & Reporting" },
-      { name: "Test Case Design", level: "Proficient", icon: "FileSpreadsheet", tag: "Positive, Negative & Edge Cases" }
-    ]
-  },
-  {
     category: "Programming Languages",
-    description: "Core programming languages for application development and querying",
-    skills: [
-      { name: "Java", level: "Proficient", icon: "Code2", tag: "OOP & Enterprise Backend" },
-      { name: "JavaScript", level: "Proficient", icon: "FileCode", tag: "ES6+, Web & React" },
-      { name: "Python", level: "Intermediate", icon: "Terminal", tag: "Scripting & Foundations" },
-      { name: "SQL", level: "Proficient", icon: "Database", tag: "Relational Queries & DDL/DML" }
-    ]
+    icon: "Code2",
+    skills: ["Java", "JavaScript", "Python", "SQL"]
   },
   {
     category: "Frontend Development",
-    description: "Building responsive, modern, and accessible client-side interfaces",
-    skills: [
-      { name: "React.js", level: "Proficient", icon: "Atom", tag: "Components, Hooks & State" },
-      { name: "Vite", level: "Proficient", icon: "Zap", tag: "Build Tool & Bundling" },
-      { name: "HTML5", level: "Advanced", icon: "Layout", tag: "Semantic Markup" },
-      { name: "CSS3 / Tailwind CSS", level: "Advanced", icon: "Palette", tag: "Responsive Design & Flex/Grid" }
-    ]
+    icon: "Layout",
+    skills: ["React.js", "HTML5", "CSS3", "Vite", "Tailwind CSS"]
   },
   {
-    category: "Backend & Authentication",
-    description: "Server-side RESTful architecture, security, and access control",
-    skills: [
-      { name: "Spring Boot", level: "Proficient", icon: "Server", tag: "Java Enterprise Framework" },
-      { name: "Node.js", level: "Intermediate", icon: "Boxes", tag: "JavaScript Runtime" },
-      { name: "REST APIs", level: "Proficient", icon: "Network", tag: "API Design & Integration" },
-      { name: "JWT", level: "Proficient", icon: "ShieldCheck", tag: "Token-based Authentication" },
-      { name: "Role-Based Access Control", level: "Proficient", icon: "Key", tag: "RBAC Authorization" }
-    ]
+    category: "Backend & Architecture",
+    icon: "Server",
+    skills: ["Spring Boot", "Node.js", "REST APIs", "JWT", "Role-Based Access Control"]
   },
   {
     category: "Databases & Cloud",
-    description: "Relational data persistence, cloud deployments, and storage services",
-    skills: [
-      { name: "MySQL", level: "Proficient", icon: "Database", tag: "Schema Design, Indexing & Backups" },
-      { name: "PostgreSQL", level: "Intermediate", icon: "Layers", tag: "Relational Database" },
-      { name: "AWS (RDS / S3)", level: "Intermediate", icon: "Cloud", tag: "Cloud DB & Object Storage" },
-      { name: "Vercel", level: "Proficient", icon: "Globe", tag: "Frontend Hosting & CI/CD" }
-    ]
+    icon: "Database",
+    skills: ["MySQL", "PostgreSQL", "AWS (RDS / S3)", "Vercel"]
   },
   {
-    category: "Development & Design Tools",
-    description: "Collaboration, version control, IDEs, and UI design suites",
-    skills: [
-      { name: "Git & GitHub", level: "Proficient", icon: "GitBranch", tag: "Version Control & Team PRs" },
-      { name: "VS Code & IntelliJ IDEA", level: "Advanced", icon: "Laptop", tag: "Development Environments" },
-      { name: "Postman", level: "Proficient", icon: "Send", tag: "API Client & Testing" },
-      { name: "Figma & Canva", level: "Proficient", icon: "Figma", tag: "UI Mockups & Graphics" },
-      { name: "draw.io", level: "Proficient", icon: "Binary", tag: "Flowcharts & Architecture Diagrams" }
-    ]
+    category: "Software Testing & QA",
+    icon: "CheckSquare",
+    skills: ["Software Testing", "Test Case Design", "Postman", "Defect Tracking"]
   },
   {
-    category: "Soft Skills",
-    description: "Interpersonal, cognitive, and collaborative strengths",
-    skills: [
-      { name: "Problem Solving", level: "Strong", icon: "Sparkles", tag: "Analytical Thinking" },
-      { name: "Teamwork", level: "Strong", icon: "Users", tag: "Multi-Member Collaboration" },
-      { name: "Adaptability", level: "Strong", icon: "Compass", tag: "Quick to Learn & Pivot" },
-      { name: "Effective Communication", level: "Strong", icon: "MessageSquare", tag: "Professional & Clear" }
-    ]
+    category: "Tools & Design",
+    icon: "Laptop",
+    skills: ["Git", "GitHub", "VS Code", "IntelliJ IDEA", "Figma", "Canva", "draw.io"]
   }
 ];
 
