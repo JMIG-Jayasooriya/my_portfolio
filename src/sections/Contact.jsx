@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import SectionTitle from '../components/SectionTitle';
 import { personalInfo } from '../data/portfolioData';
-import { Mail, Linkedin, Github, Send, CheckCircle2, AlertCircle, MapPin } from 'lucide-react';
+import { Mail, Linkedin, Github, Send, CheckCircle2, AlertCircle, MapPin, Phone } from 'lucide-react';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -29,7 +29,6 @@ const Contact = () => {
       return;
     }
 
-    // Basic email validation
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     if (!emailRegex.test(formData.email)) {
       setError('Please enter a valid email address.');
@@ -38,7 +37,6 @@ const Contact = () => {
 
     setIsSubmitting(true);
 
-    // Simulate sending with realistic feedback
     setTimeout(() => {
       setIsSubmitting(false);
       setSubmitted(true);
@@ -57,7 +55,7 @@ const Contact = () => {
         <SectionTitle
           subtitle="GET IN TOUCH"
           title="Contact Me"
-          description="Have an internship opportunity, a project idea, or just want to connect? Feel free to reach out!"
+          description="Interested in discussing a Quality Assurance internship opportunity or collaborating on projects? Reach out directly!"
         />
 
         <div className="contact-grid">
@@ -65,7 +63,7 @@ const Contact = () => {
           <div className="contact-info-card">
             <h3 className="contact-info-title">Let's Connect & Collaborate</h3>
             <p className="contact-info-text">
-              I am actively seeking internship opportunities in software engineering, full-stack development, and quality assurance. I welcome inquiries, mentorship advice, and professional connections.
+              I am actively seeking Quality Assurance Intern opportunities where I can apply my analytical thinking, testing fundamentals, and development knowledge to ensure top-tier software quality.
             </p>
 
             <div className="contact-channels">
@@ -79,13 +77,23 @@ const Contact = () => {
                 </div>
               </a>
 
+              <a href={`tel:${personalInfo.phone.replace(/\s+/g, '')}`} className="contact-channel-item">
+                <div className="contact-channel-icon">
+                  <Phone size={20} />
+                </div>
+                <div>
+                  <div className="contact-channel-label">Phone / WhatsApp</div>
+                  <div className="contact-channel-value">{personalInfo.phone}</div>
+                </div>
+              </a>
+
               <a href={personalInfo.linkedin} target="_blank" rel="noopener noreferrer" className="contact-channel-item">
                 <div className="contact-channel-icon">
                   <Linkedin size={20} />
                 </div>
                 <div>
                   <div className="contact-channel-label">LinkedIn Profile</div>
-                  <div className="contact-channel-value">linkedin.com/in/isumi-gayasha</div>
+                  <div className="contact-channel-value">linkedin.com</div>
                 </div>
               </a>
 
@@ -95,7 +103,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <div className="contact-channel-label">GitHub Repository</div>
-                  <div className="contact-channel-value">github.com/isumi-gayasha</div>
+                  <div className="contact-channel-value">github.com</div>
                 </div>
               </a>
 
@@ -112,7 +120,7 @@ const Contact = () => {
 
             <div style={{ padding: '16px', backgroundColor: '#F8FAFC', borderRadius: '10px', border: '1px solid var(--border-color)' }}>
               <p style={{ fontSize: '0.85rem', color: 'var(--text-muted)' }}>
-                <strong>Availability:</strong> Open for Summer/Industrial Training Internships & Academic Collaborations.
+                <strong>Immediate Status:</strong> Open for Quality Assurance Internships, Software Testing positions & Graduate Roles.
               </p>
             </div>
           </div>
@@ -125,10 +133,10 @@ const Contact = () => {
                   <CheckCircle2 size={36} />
                 </div>
                 <h3 style={{ fontSize: '1.4rem', color: 'var(--text-heading)', marginBottom: '8px' }}>
-                  Thank You for Your Message!
+                  Message Sent Successfully!
                 </h3>
                 <p style={{ color: 'var(--text-body)', fontSize: '0.95rem', lineHeight: '1.6', marginBottom: '24px' }}>
-                  Your inquiry has been received. I will review it and get back to you shortly.
+                  Thank you for reaching out, {personalInfo.name} will respond to your message promptly.
                 </p>
                 <button
                   onClick={() => setSubmitted(false)}
@@ -157,7 +165,7 @@ const Contact = () => {
                     id="name"
                     name="name"
                     className="form-input"
-                    placeholder="e.g. John Doe"
+                    placeholder="e.g. Hiring Manager / Recruiter"
                     value={formData.name}
                     onChange={handleChange}
                     required
@@ -171,7 +179,7 @@ const Contact = () => {
                     id="email"
                     name="email"
                     className="form-input"
-                    placeholder="e.g. johndoe@company.com"
+                    placeholder="e.g. recruiter@company.com"
                     value={formData.email}
                     onChange={handleChange}
                     required
@@ -185,7 +193,7 @@ const Contact = () => {
                     id="subject"
                     name="subject"
                     className="form-input"
-                    placeholder="e.g. Internship Inquiry / Project Discussion"
+                    placeholder="e.g. QA Internship Opportunity / Interview Invitation"
                     value={formData.subject}
                     onChange={handleChange}
                   />
@@ -197,7 +205,7 @@ const Contact = () => {
                     id="message"
                     name="message"
                     className="form-textarea"
-                    placeholder="Write your message or inquiry here..."
+                    placeholder="Write your inquiry or message here..."
                     value={formData.message}
                     onChange={handleChange}
                     required
