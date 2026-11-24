@@ -8,7 +8,6 @@ import About from './sections/About';
 import Skills from './sections/Skills';
 import Projects from './sections/Projects';
 import Qualifications from './sections/Qualifications';
-import References from './sections/References';
 import Contact from './sections/Contact';
 
 function App() {
@@ -26,7 +25,6 @@ function App() {
         <Skills />
         <Projects />
         <Qualifications />
-        <References />
         <Contact />
       </main>
 
